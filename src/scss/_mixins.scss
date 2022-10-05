@@ -1,0 +1,8 @@
+@import 'variables';
+
+@mixin tablet {
+    @media (min-width: $tablet) {
+        @content;
+    }
+}
+

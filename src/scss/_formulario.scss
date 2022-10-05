@@ -1,0 +1,86 @@
+@import 'variables';
+
+/*.formulario {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.formulario fieldset {
+   border: 1px solid $negro;
+   margin-bottom: 2rem;
+}
+.formulario legend {
+    background-color: $colorPrincipal;
+    width: 100%;
+    text-align: center;
+    color: $blanco;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    margin-bottom: 4rem;
+
+}*/
+
+.formulario {
+    max-width: 60rem;
+    margin: 0 auto;
+
+    fieldset {
+        border: 1px solid $negro;
+        margin-bottom: 2rem;
+     }
+     
+     legend {
+        background-color: $colorPrincipal;
+        width: 100%;
+        text-align: center;
+        color: $blanco;
+        text-transform: uppercase;
+        font-weight: 900;
+        padding: 1rem;
+        margin-bottom: 4rem;
+    
+    }
+}
+
+
+/*.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.campo label {
+    flex-basis: 10rem;
+} 
+.campo input:not([type="radio"]),
+.campo textarea,
+.campo select  {
+    flex: 1;
+    border: 1px solid $colorSecundario;
+    padding: 1rem;
+}*/
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+
+    label {
+        flex-basis: 10rem;
+    }
+    input {
+        &:not([type="radio"]){
+            flex: 1;
+            border: 1px solid $colorSecundario;
+            padding: 1rem;
+        }
+    }
+    textarea {
+        flex: 1;
+        border: 1px solid $colorSecundario;
+        padding: 1rem;
+    } 
+    select  {
+        flex: 1;
+        border: 1px solid $colorSecundario;
+        padding: 1rem;
+    }
+}
+

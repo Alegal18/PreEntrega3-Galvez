@@ -1,0 +1,83 @@
+@import 'variables';
+@import 'mixins';
+
+.site-footer {
+    border-top: 1px solid $colorSecundario;
+    margin-top: 5rem;
+    padding-top: 5rem;
+
+    h3 {
+        margin-bottom: .5rem;
+        text-align: center;
+
+        @include tablet {             
+            margin-bottom: .5rem;
+            text-align: left;
+            }
+    }
+}
+/*.site-footer h3 {
+    margin-bottom: .5rem;
+    text-align: center;
+}*/
+/*@media (min-width: 768px) { 
+    .site-footer h3 {
+        margin-bottom: .5rem;
+        text-align: left;
+    }
+    .grid-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}*/
+.grid-footer {
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+/*.footer-menu a {
+    display: block;
+    text-align: center;
+}
+@media (min-width: 768px) { 
+    .footer-menu a {        
+        text-align: left;
+    }
+}*/
+.footer-menu {
+    a {
+        display: block;
+        text-align: center;
+    
+        @include tablet {             
+            text-align: left;
+        }
+    }
+}
+
+/*.grid-footer > div {
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) { 
+    .grid-footer > div {
+        margin-bottom: 0;
+    }
+}*/
+.grid-footer{ 
+    &> div {
+        margin-bottom: 2rem;
+
+        @include tablet {             
+             margin-bottom: 0;
+        }
+    }
+}
+
+.copyright {
+    margin-top: 5rem;
+    text-align: center;
+}

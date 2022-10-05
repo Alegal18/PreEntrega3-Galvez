@@ -1,0 +1,9 @@
+@import 'mixins';
+.text-center {
+    text-align: center;
+}
+.max-width-30 {
+    @include tablet {     
+        max-width: 30rem;
+    }
+}

@@ -1,0 +1,80 @@
+@import 'variables';
+@import 'mixins';
+
+/*.nombre-sitio {
+    margin-top: 5rem;
+    text-align: center;
+}
+.nombre-sitio span {
+    color: #037bc0;
+}
+.contenedor-navegacion {
+    border-top: .1rem solid #e1e1e1;
+}
+.nav-principal {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) { 
+    .nav-principal {
+        justify-content: space-between;
+        flex-direction: row;
+    }    
+}
+.hero {
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 25rem;
+}
+@media (min-width: 768px) {     
+    .hero {
+        height: 55rem;
+
+    } 
+    
+}*/
+.nombre-sitio {
+    margin-top: 5rem;
+    text-align: center;
+
+    span {
+        color: $colorPrincipal;
+    }
+}
+
+.contenedor-navegacion {
+    border-top: .1rem solid $colorSecundario;
+}
+.nav-principal {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {          
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+    
+
+.hero {
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 25rem;
+
+    @include tablet {         
+        height: 55rem;
+    
+    } 
+}
+
+    
+

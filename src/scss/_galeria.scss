@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'mixins';
+
+/*.galeria {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px) { 
+    .galeria {
+    grid-template-columns: repeat(3, 1fr);
+    }
+}
+.galeria img {
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
+}*/
+.galeria {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    
+    
+
+    @include tablet {         
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    img {
+        height: 40rem;
+        width: 40rem;
+        object-fit: cover;
+    }
+
+}
+
+
