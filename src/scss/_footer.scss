@@ -77,7 +77,56 @@
     }
 }
 
-.copyright {
-    margin-top: 5rem;
-    text-align: center;
+.footer-logo{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+
+
+    @include tablet {        
+        flex-direction: row;
+        justify-content: space-evenly;        
+    } 
+
+    ul {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        padding: 0;
+
+        @include tablet {
+            flex-direction: row;  
+            justify-content: right;
+                      
+            
+        }
+
+        li{
+            margin-bottom: 1rem;
+            align-items: center;
+            @include tablet {
+                margin-right: 1rem;
+            }
+             
+            img {
+                height: 3rem;
+                width: 3rem;                
+            }
+        }
+        
+
+        
+    }
+    
+    
 }
+
+.copyright {
+    margin-top: 2rem;
+    text-align: center;
+    @include tablet {        
+        
+    }
+    
+}
+

@@ -582,8 +582,35 @@ img {
     .grid-footer > div {
       margin-bottom: 0; } }
 
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (min-width: 768px) {
+    .footer-logo {
+      flex-direction: row;
+      justify-content: space-evenly; } }
+  .footer-logo ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    padding: 0; }
+    @media (min-width: 768px) {
+      .footer-logo ul {
+        flex-direction: row;
+        justify-content: right; } }
+    .footer-logo ul li {
+      margin-bottom: 1rem;
+      align-items: center; }
+      @media (min-width: 768px) {
+        .footer-logo ul li {
+          margin-right: 1rem; } }
+      .footer-logo ul li img {
+        height: 3rem;
+        width: 3rem; }
+
 .copyright {
-  margin-top: 5rem;
+  margin-top: 2rem;
   text-align: center; }
 
 /*.formulario {
